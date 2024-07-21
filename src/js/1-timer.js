@@ -5,8 +5,6 @@ import "flatpickr/dist/flatpickr.min.css";
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
-
-
 const options = {
   enableTime: true,
   time_24hr: true,
@@ -32,8 +30,6 @@ const options = {
   },
 };
 
-
-
 const datetimePicker = document.getElementById('datetime-picker');
 const startButton = document.querySelector('button[data-start]');
 
@@ -46,6 +42,7 @@ const timerFields = {
 
 let userSelectedDate = null;
 let countdownInterval = null;
+
 startButton.disabled = true;
 
 flatpickr(datetimePicker, options);
